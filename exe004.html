@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas às Perguntas</title>
+</head>
+<body>
+
+<script>
+// Definindo as variáveis
+var branco = "preto";
+var preto = "cinza";
+var cinza = "branco";
+var carro = "preto";
+var valor = 30000;
+var prestacao = 750;
+
+// a) branco == "branco"
+document.write("<p>a) branco == 'branco': " + (branco == "branco") + "</p>");
+
+// b) branco == cinza
+document.write("<p>b) branco == cinza: " + (branco == cinza) + "</p>");
+
+// c) carro === branco
+document.write("<p>c) carro === branco: " + (carro === branco) + "</p>");
+
+// d) var cavalo = carro == "preto" ? "cinza" : "marron";
+var cavalo = carro == "preto" ? "cinza" : "marron";
+document.write("<p>d) var cavalo = carro == 'preto' ? 'cinza' : 'marron': " + cavalo + "</p>");
+
+// e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada de 3.000?
+var entrada = 3000;
+var valorRestante = valor - entrada;
+var numeroPrestacoes = valorRestante / prestacao;
+document.write("<p>e) Número de prestações necessárias: " + numeroPrestacoes + "</p>");
+
+// f) Somando as variáveis de cores é formada uma string de quantos caracteres?
+var coresConcatenadas = branco + preto + cinza;
+document.write("<p>f) Quantidade de caracteres ao somar as variáveis de cores: " + coresConcatenadas.length + "</p>");
+</script>
+
+</body>
+</html>
+
+
