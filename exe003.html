@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo das Operações</title>
+</head>
+<body>
+
+<script>
+function analisarTipo(operacao, resultado) {
+    var resultadoTipo = `${operacao} => ${typeof resultado}`;
+    console.log(resultadoTipo);
+    document.write(`<p>${resultadoTipo}</p>`);
+}
+
+// Operações
+analisarTipo('10 + 15', 10 + 15);
+analisarTipo('"10" + 2', "10" + 2);
+analisarTipo('"10" * 2', "10" * 2);
+analisarTipo('"10" / 3', "10" / 3);
+analisarTipo('"10" % 3', "10" % 3);
+analisarTipo('10 + true', 10 + true);
+analisarTipo('10 == "10"', 10 == "10");
+analisarTipo('10 === "10"', 10 === "10");
+analisarTipo('10 < 11', 10 < 11);
+analisarTipo('10 > 12', 10 > 12);
+analisarTipo('10 <= 10.1', 10 <= 10.1);
+analisarTipo('10 > 9.99', 10 > 9.99);
+analisarTipo('10 != "dez"', 10 != "dez");
+analisarTipo('10 + true', 10 + true);
+analisarTipo('"dez" + true', "dez" + true);
+analisarTipo('10 + false', 10 + false);
+analisarTipo('10 * false', 10 * false);
+analisarTipo('true + true', true + true);
+// Removido: analisarTipo('10++', 10++);
+// Removido: analisarTipo('10--', 10--);
+analisarTipo('1 & 1', 1 & 1);
+analisarTipo('1 & 0', 1 & 0);
+analisarTipo('0 & 0', 0 & 0);
+analisarTipo('1 & 0', 1 & 0);
+analisarTipo('0 / 1', 0 / 1);
+analisarTipo('5 + 5 == 10', 5 + 5 == 10);
+analisarTipo('"5" + "5" == 10', "5" + "5" == 10);
+analisarTipo('"5" * 2 > 9', "5" * 2 > 9);
+analisarTipo('(10 + 10) * 2', (10 + 10) * 2);
+analisarTipo('10 + 10 * 2', 10 + 10 * 2);
+</script>
+
+</body>
+</html>
